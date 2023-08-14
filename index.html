@@ -51,21 +51,27 @@ function menuToggle() {
     menuToggle.classList.toggle('open');
   });
 }
-
+$(window).scroll(function(){
+  if ($(this).scrollTop() > 50) {
+     $('.theNavBar').addClass('scrolledNavBG');
+  } else {
+     $('.theNavBar').removeClass('scrolledNavBG');
+  }
+});
 </script>
 <body>
-  <nav>
-    <div class="container">
+  <nav class="theNavBar">
+    <div class="align-items-center container d-flex justify-content-between mt-3">
       <h1 class="logo d-none">Generic<span>Logo</span></h1>
       <span id="fullNavIcons">
         <a href="https://www.facebook.com/Liam-Wiggins-Personal-Training-290878944881761/" target="_blank"  style="padding:1em"><i id="socialMediaIcons" class="fab fa-facebook text-white socialMediaIcons"></i></a>
         <a href="https://www.instagram.com" target="_blank"  style="padding:1em"><i id="socialMediaIcons" class="fab fa-instagram text-white  socialMediaIcons"></i></a>
         <a href="https://www.linkedin.com" target="_blank"  style="padding:1em"><i id="socialMediaIcons" class="fab fa-linkedin text-white  socialMediaIcons"></i></a>
       </span>
-      <ul class="site-nav mt-3">
+      <ul class="site-nav">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Workouts</a></li>
+        <li><a href="./physiotherapy.html">Services</a></li>
         <li><a href="#">Reviews</a></li>
         <li><a href="#">Contact</a></li>
        <span id="burgerIcons" class=""><li class="d-flex justify-content-around"><a href="https://www.facebook.com/Liam-Wiggins-Personal-Training-290878944881761/" target="_blank"  style="padding:1em"><i id="socialMediaIcons" class="fab fa-facebook socialMediaIcons"></i></a>
@@ -81,76 +87,6 @@ function menuToggle() {
       </div>
     </div>
   </nav>
-  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-    <a class="navbar-brand row d-flex justify-content-evenly" href="#">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="align-items-center navbar-nav justify-content-evenly ml-2 nav w-75">
-        <li class="nav-item">
-          <li class="">
-          <a href="https://www.facebook.com/Liam-Wiggins-Personal-Training-290878944881761/" target="_blank"><i id="socialMediaIcons" class="fab fa-facebook socialMediaIcons"></i></a>
-          </li><li class="">
-            <a href="https://www.instagram.com" target="_blank"><i id="socialMediaIcons" class="fab fa-instagram socialMediaIcons"></i></a>
-          </li><li class="">
-            <a href="https://www.linkedin.com" target="_blank"><i id="socialMediaIcons" class="fab fa-linkedin socialMediaIcons"></i></a>
-          </li><li class="">
-            <a href=""><i id="socialMediaIcons envelopeIcon"  onclick="sendEmailContact()" class="fas fa-envelope socialMediaIcons"></i></a>
-          </li>
-        </li>
-      <li class="nav-item">
-          <a class="active" aria-current="page" href="#">Sessions</a>
-        </li>
-        <li class="nav-item">
-          <a class="active" aria-current="page" href="./physiotherapy.html">Physiotherapy</a>
-        </li>
-        <li class="nav-item">
-          <a class="" href="./about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="" href="#">Workouts</a>
-        </li>
-        <li class="nav-item">
-          <a class="" href="#">Contact</a>
-        </li>
-      </ul>
-
-    </div>
-  </nav> -->
-  <!-- <div class="row justify-content-end navBar">
-    <div class="col-5 align-items-center d-flex navIcons">
-      <div class="d-flex icons justify-content-evenly w-100">
-            <a href="https://www.facebook.com/Liam-Wiggins-Personal-Training-290878944881761/" target="_blank"><i id="socialMediaIcons" class="fab fa-facebook socialMediaIcons"></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i id="socialMediaIcons" class="fab fa-instagram socialMediaIcons"></i></a>
-            <a href="https://www.linkedin.com" target="_blank"><i id="socialMediaIcons" class="fab fa-linkedin socialMediaIcons"></i></a>
-            <a href=""><i id="socialMediaIcons envelopeIcon"  onclick="sendEmailContact()" class="fas fa-envelope socialMediaIcons"></i></a>
-      </div>
-    </div>
-    <div class="col-2 justify-content-center align-items-center d-flex">
-      <img src="./images/logo-no-background.png" class="demoLogo" alt="Wiggy logo" width="100" height="100">
-    </div>
-  <div class="justify-content-end nav col-5 navPagesLinks">
-    <ul class="align-items-center justify-content-evenly ml-2 nav w-75">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Sessions</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./physiotherapy.html">Physiotherapy</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Workouts</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-    </div>  -->
       <div class="align-content-center d-flex firstpage justify-content-around">
         <div data-aos="fade-right" data-aos-duration="3000" class="aos-animate aos-init col-9 col-lg-5 mr nameFirstBox">
           <!-- <img src="./images/logo-white.png" class="nameBox"> -->
@@ -164,11 +100,13 @@ function menuToggle() {
       </div>
       <div class="align-items-center d-flex secondPage row">
             <div class="container fadeInContainer" data-aos="fade-right" data-aos-duration="3000">
-              <div class="justify-content-center row">
-                <div class=" mb-md-0 mb-5 col-10 d-flex justify-content-center">
-                  <div class="card p-4 text-black whyChooseCard">
+              <div class="justify-content-center row" style="    margin-top: 8rem;">
+                <div class=" mb-md-0 mb-5 col-10 row d-flex justify-content-center text-center">
+                  <h2 class="col-12 mb-5">Get yourself fit</h1>
+                  <h4 class="col-10">Looking after your body is key to a longer healthier life, gettings started today with liam Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Vero perferendis inventore</strong> veritatis quaerat ullam optio fugit tempore reprehenderit repellat nulla? Reprehenderit animi temporibus quia officiis. Ipsa, vitae. Officia, facilis quidem?</h2><h4 class="mt-4">Take a look at the options below and for either a full package or a individual service</h4>
+                  <!-- <div class="card p-4 text-black whyChooseCard">
                     <h1 class="mb-5 text-center">Why choose Liam Wiggins</h1>
-                    <!-- <h5 class="mt-2">Words and jargon why its good to work with you </h5> -->
+                    <h5 class="mt-2">Words and jargon why its good to work with you </h5>
                     <ul class="benefitsChecklist">
                       <li>
                         <p class="d-flex"><span class="tic mr-2">&#10004</span>Experienced PT with over 6 years experience</p>
@@ -179,11 +117,8 @@ function menuToggle() {
                         <p class="d-flex"><span class="tic mr-2">&#10004</span>Or choose what you require from the 4 options below</p>
                       </li>
                     </ul>
-                  </div>
+                  </div> -->
                 </div>
-                <!-- <div class="col-md-6 col-10 mb-md-0 mb-5 d-flex justify-content-center">
-                    <img src="./images/topOfMountain.png" class="secondPageTopImage">
-                </div> -->
                 <div class="row benefitPlan" >
                   <div class="col-md-6 col-12 mb-2 mb-md-0 d-flex flex-column align-items-center text-center trainingCorner">
                     <i class="fa-solid fa-dumbbell fourSectionIcon fa-3x p-4 mt-2"></i>
@@ -336,6 +271,19 @@ function menuToggle() {
       <script>
         AOS.init();
       </script>
-
+  <footer class="footer row">
+    <div class="footer-content col-12 ">
+      <div class="footer-logo">
+        <img src="./images/logo-no-background.png" alt="Company Logo" width="100">
+      </div>
+      <div class="footer-address">
+        <p>Victoria Works<br>Benjamin St, Wakefield<br>WF2 9AR</p>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9451.599878340583!2d-1.5133767!3d53.6844082!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487966fdc38ef0c7%3A0x239b6dd28a80c7b6!2sTeam%20Esteem%20Fitness!5e0!3m2!1sen!2suk!4v1692035575352!5m2!1sen!2suk" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="col-12 text-center mt-3">
+        <p class="small">&copy; 2023 Liam Wiggins PT. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

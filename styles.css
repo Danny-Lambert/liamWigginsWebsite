@@ -1,6 +1,6 @@
 html, body {
     height:100%;
-    background-color: rgb(31, 105, 128);
+    /* background-color: rgb(31, 105, 128); */
     font-family: 'Oxygen', sans-serif;
 } 
 .row{
@@ -73,7 +73,9 @@ html, body {
     max-height: 3rem;
     width: 20rem;
 }
-
+.scrolledNavBG{
+    background-color: #1c1a1ad4;
+}
 /* END OF NAVBAR */
 
 /* FOOTER FOR ALL PAGES */
@@ -83,13 +85,7 @@ html, body {
     justify-content: center;
     display: flex;
 }
-.footerContent{
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-    display: flex;
 
-}
 .socialMediaIcons{
    transform: scale(1.5);
 }
@@ -605,3 +601,158 @@ a:link,a:active,a:visited,a:hover{
     }
     
   }
+
+  /* BANNER IMAGES */
+.topBannerImage{
+    height: 30%;
+
+}
+.topBannerImagePhysio{
+    background-image: url("./images/massageBanner.jpg");
+    background-repeat: round;
+    /* background-image: url("./images/testmassage.jpg"); */
+
+    /* background-color: pink;     */
+}
+
+.whatToExpectBox{
+    margin-top:5rem;
+}
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+  
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+  
+
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    height: fit-content;
+    position: absolute;
+    width: 100%;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .footer-logo,
+  .footer-address,
+  .footer-legal {
+    flex-basis: calc(33.33% - 20px);
+    max-width: 300px;
+    padding: 10px;
+  }
+
+  .footer-copyright {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .footer-content {
+        display: block;
+        text-align: center;
+      }
+      .footer-address, .footer-logo{
+        max-width: 500px;
+
+      }
+  }
+/* 
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-logo,
+    .footer-address,
+    .footer-legal {
+      flex-basis: 100%;
+      text-align: center;
+      max-width: none;
+    }
+  } */
