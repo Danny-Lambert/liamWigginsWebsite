@@ -71,8 +71,16 @@ $(window).scroll(function(){
       <ul class="site-nav">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="./physiotherapy.html">Services</a></li>
-        <li><a href="#">Reviews</a></li>
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="    background-color: #464655 !important;">
+          <a class="h5" href="#">Personal Training</a>
+          <a class="h5" href="#">Physiotherapy</a>
+          <div class="dropdown-divider"></div>
+          <a class="" href="#">Nutrition</a>
+        </div>
+        <li><a href="./reviews.html">Reviews</a></li>
         <li><a href="#">Contact</a></li>
        <span id="burgerIcons" class=""><li class="d-flex justify-content-around"><a href="https://www.facebook.com/Liam-Wiggins-Personal-Training-290878944881761/" target="_blank"  style="padding:1em"><i id="socialMediaIcons" class="fab fa-facebook socialMediaIcons"></i></a>
             <a href="https://www.instagram.com" target="_blank"  style="padding:1em"><i id="socialMediaIcons" class="fab fa-instagram socialMediaIcons"></i></a>
@@ -101,7 +109,7 @@ $(window).scroll(function(){
       <div class="align-items-center d-flex secondPage row">
             <div class="container fadeInContainer" data-aos="fade-right" data-aos-duration="3000">
               <div class="justify-content-center row" style="    margin-top: 8rem;">
-                <div class=" mb-md-0 mb-5 col-10 row d-flex justify-content-center text-center">
+                <div class=" mb-md-0 mb-5 col-10 px-0 row d-flex justify-content-center text-center">
                   <h2 class="col-12 mb-5">Get yourself fit</h1>
                   <h4 class="col-10">Looking after your body is key to a longer healthier life, gettings started today with liam Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Vero perferendis inventore</strong> veritatis quaerat ullam optio fugit tempore reprehenderit repellat nulla? Reprehenderit animi temporibus quia officiis. Ipsa, vitae. Officia, facilis quidem?</h2><h4 class="mt-4">Take a look at the options below and for either a full package or a individual service</h4>
                   <!-- <div class="card p-4 text-black whyChooseCard">
@@ -146,114 +154,7 @@ $(window).scroll(function(){
             </div>
             <!-- <h3 class="divider"><i class="fa-solid fa-chevron-down"></i> See what clients have said  <i class="fa-solid fa-chevron-down"></i></h3> -->
           </div>
-            <div class="container mb-5" >
-              <div class="row">
-                <div class="col-12 my-5 text-center text-decoration-underline text-white">
-                  <h3>Client Reviews</h3>
-                </div>
-                <div class="col-12">
-                  <div class="outerdiv mb-5">
-                    <div class="innerdiv">
-                      <!-- div1 -->
-                      <div class="div1 eachdiv">
-                        <div class="userdetails">
-                          <div class="imgbox">
-                            <span class="fa fa-star fa-2xs checked"></span>
-                            <span class="fa fa-star fa-2xs checked"></span>
-                            <span class="fa fa-star fa-2xs checked"></span>
-                            <span class="fa fa-star fa-2xs checked"></span>
-                            <span class="fa fa-star fa-2xs checked"></span>
-                          </div>
-                          <div class="detbox">
-                            <p class="name">Julie Sandbrooke</p>
-                            <p class="designation">PT client</p>
-                          </div>
-                        </div>
-                        <div class="review">
-                          <h4>Training with Liam Wiggins is awesome! The sessions are super fun, tough but in a good way & motivating. Never fails to put a smile on my face & I always leave feeling really good!</h4>
-                        <p>“ You really are seen as an individual & everything is tailored to meet your goals, not just a one size fits all approach. I’ve started the nutrition programme & it is far better than anything I’ve tried before. They really takes the time to know you & it’s much more than just telling you what to eat & when. Joining The Armoury was definitely the best decision I made!” ​”</p>
-                        </div>
-                      </div>
-                      <!-- div3 -->
-                      <div class="div3 eachdiv">
-                        <div class="userdetails">
-                          <div class="imgbox">
-                            <span class="fa fa-star fa-2xs checked"></span>
-                            <span class="fa fa-star fa-2xs checked"></span>
-                            <span class="fa fa-star fa-2xs checked"></span>
-                            <span class="fa fa-star fa-2xs checked"></span>
-                            <span class="fa fa-star fa-2xs checked"></span>
-                          </div>
-                          <div class="detbox">
-                            <p class="name dark">Kira Whittle</p>
-                            <p class="designation dark">Verified Graduate</p>
-                          </div>
-                        </div>
-                        <div class="review dark row">
-                          <div class="col-6 px-0"><h4>I lost 5 stone and I feel fantastic!</h4>
-                            <p class="mr-1">“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I’ve often referred to it during interviews as an example of experience. It certainly helped me land a job as a full-stack 100% recommend! ”</p></div>
-                          
-                          <div class="col-6 px-0"><img class="w-100 testimonialImage" src="./images/weightLossImageCropped.png" /></div>
-                          
-                        </div>
-                      </div>
-                      <!-- div4 -->
-                      <div class="div4 eachdiv">
-                        <div class="userdetails">
-                          <div class="detbox mr-3">
-                            <p class="name ">Jeanette Harmon</p>
-                            <p class="designation ">Physiotherapy client</p>
-                          </div>
-                          <div class="imgbox">
-                            <span class="fa fa-star fa-2xs checked"></span>
-                            <span class="fa fa-star fa-2xs checked"></span>
-                            <span class="fa fa-star fa-2xs checked"></span>
-                            <span class="fa fa-star fa-2xs checked"></span>
-                            <span class="fa fa-star fa-2xs checked"></span>
-                          </div>
-                        </div>
-                        <div class="review ">
-                          <h4>The range of movement i've got back in my shouler is unbelievable!</h4>
-                        <p>“ Clean, friendly studio without the sweaty smell! The groups are never more than 6 and you always get individual attention. They  always pushes me to my limits but the results are worth it. At 58 I never believed I would actually enjoy exercising!”</p>
-                        </div>
-                      </div>
-                      <!-- div5 -->
-                      <div class="div5 eachdiv">
-                        <div class="userdetails">
-                          <div class="imgbox">
-                            <span class="fa fa-star fa-2xs checked"></span>
-                            <span class="fa fa-star fa-2xs checked"></span>
-                            <span class="fa fa-star fa-2xs checked"></span>
-                            <span class="fa fa-star fa-2xs checked"></span>
-                            <span class="fa fa-star fa-2xs checked"></span>
-                          </div>
-                          <div class="detbox">
-                            <p class="name">Patrick Abrams</p>
-                            <p class="designation">PT client</p>
-                          </div>
-                        </div>
-                        <div class="review">
-                          <h4>At 58 I never believed I would actually enjoy exercising</h4>
-                        <p>“After feeling tubby on the beach during my summer holiday, I dropped The Armoury a message, went for a trial session and I’ve been working with Armoury Coaching since July 2018. I have a great programme set up and constant encouragement and support. They're amazing to work with and I’d highly recommend Armoury Coaching to improve your fitness and physique.”</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- <div class="parent">
-                    <div class="div1" style="border-radius: 2px solid yellow;"> test</div>
-                    <div class="div2" style="border-radius: 2px solid yellow;">test 2</div>
-                    <div class="div3" style="border-radius: 2px solid yellow;">test 3</div>
-                    <div class="div4" style="border-radius: 2px solid yellow;"> test 4</div>
-                    <div class="div5" style="border-radius: 2px solid yellow;"> test 5</div>
-                    <div class="div6" style="border-radius: 2px solid yellow;"> test 6</div>
-                    </div> -->
-                  </div>
-            </div>
-          <!-- <h1 class="nameBox">Liam Wiggins</h1>
-          <h2 class="titleBox">PT</h2> -->
-      </div>
-      <form id="form" class="form d-none">
+      <form id="form" class="form">
         <h2 class="contactH2">GET IN TOUCH</h2>
         <p class="contactP" type="Name:"><input  class="contactInput" placeholder="Write your name here.."></input></p>
         <p class="contactP" type="Email:"><input class="contactInput" placeholder="Let us know how to contact you back.."></input></p>

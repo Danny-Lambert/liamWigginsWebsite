@@ -216,7 +216,7 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 
 
 
 /* ABOUT ME PAGE  */
-.aboutMe{
+.aboutMe
     background-image: url('./images/aboutBanner.jpg');
     background-size: cover;
     background-color: black;
@@ -317,6 +317,24 @@ a:link,a:active,a:visited,a:hover{
 .div5
 {
 	background: #18202D;
+	grid-column: 2/3;
+    grid-row: 2/3;
+}
+.div6
+{
+	background: #377346;
+	grid-column: 2/3;
+    grid-row: 2/3;
+}
+.div7
+{
+	background: #65670a;
+	grid-column: 2/3;
+    grid-row: 2/3;
+}
+.div8
+{
+	background: #4a5260;
 	grid-column: 2/3;
     grid-row: 2/3;
 }
@@ -614,7 +632,15 @@ a:link,a:active,a:visited,a:hover{
 
     /* background-color: pink;     */
 }
+.topBannerImagePT{
+  background-image: url("./images/aboutBanner.jpg");
+  background-repeat: round;
+}
+.topBannerImageReview{
+  background-image: url("./images/reviewBanner.jpg");
+  background-repeat: round;
 
+}
 .whatToExpectBox{
     margin-top:5rem;
 }
