@@ -72,7 +72,7 @@ $(window).scroll(function(){
         <li><a href="./personal-training.html">Personal Training</a></li>
         <li><a href="./physiotherapy.html">Physiotherapy</a></li>
         <li><a href="./reviews.html">Reviews</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#form">Contact</a></li>
         <span id="burgerIcons" class="">
           <li class="d-flex justify-content-around">
             <a href="https://www.facebook.com/Liam-Wiggins-Personal-Training-290878944881761/" target="_blank"  style="padding:1em"><i id="socialMediaIcons" class="fab fa-facebook socialMediaIcons"></i></a>
@@ -132,8 +132,10 @@ $(window).scroll(function(){
             </div>
             <!-- <h3 class="divider"><i class="fa-solid fa-chevron-down"></i> See what clients have said  <i class="fa-solid fa-chevron-down"></i></h3> -->
           <hr class="my-4" style="color:#00000030;">
-
-          <div class="card col-10 col-lg-auto p-4 text-black whyChooseCard mt-5 text-center ">
+        </div>
+        <div class="row justify-content-center" style="    background-color: #f7f7f7;
+        ">
+          <div class="card col-10 col-lg-auto p-4 text-black whyChooseCard mt-5">
             <h1 class="mb-5 text-center mx-3">Benefits of choosing Liam Wiggins</h1>
             <!-- <h5 class="mt-2">Working with a personal trainer (PT) offers a multitude of invaluable benefits that contribute to a holistic and successful fitness journey. One of the most compelling reasons to collaborate with a PT is the personalized approach they bring to every session. Unlike generic workout plans, a PT tailors each regimen to your individual goals, fitness level, and any specific considerations, ensuring optimal results while minimizing the risk of injury. Their expertise and knowledge empower you with a deeper understanding of proper exercise techniques, enabling you to perform workouts with precision and confidence.
                   <br><br>
@@ -143,7 +145,7 @@ $(window).scroll(function(){
                 <p class="d-flex"><span class="tic mr-2">&#10004</span>Experienced PT with over 6 years experience</p>
                 <p class="d-flex"><span class="tic mr-2">&#10004</span>University Degree in sucking dick</p>
                 <p class="d-flex"><span class="tic mr-2">&#10004</span>Fully qualified physiotherapist</p>
-                <p class="d-flex"><span class="tic mr-2">&#10004</span>Create personalised plans for improving healyth, physique or recovery</p>
+                <p class="d-flex"><span class="tic mr-2">&#10004</span>Create personalised plans for improving health, physique or recovery</p>
                 <p class="d-flex"><span class="tic mr-2">&#10004</span>Become his best mate and go out with pints with him</p>
                 <p class="d-flex"><span class="tic mr-2">&#10004</span>Will sing Nickelback - How you remind me whenever you want</p>
                 <p class="d-flex"><span class="tic mr-2">&#10004</span>Full 4 option plan available to cover everything</p>
@@ -151,19 +153,22 @@ $(window).scroll(function(){
               </li>
             </ul>
           </div> 
-      <form id="form" class="form col-10 col-lg-7">
+        </div>
+          <div class="row justify-content-center"  style="    background-color: #f7f7f7;">
+          <!-- <hr class="my-4" style="color:#00000030;"> -->
+      <form id="form" class="form col-10 col-lg-6">
         <h2 class="contactH2">GET IN TOUCH</h2>
-        <p class="contactP" type="Name:"><input  class="contactInput" placeholder="Write your name here.."></input></p>
-        <p class="contactP" type="Email:"><input class="contactInput" placeholder="Let me know how to contact you back.."></input></p>
-        <p class="contactP" type="Message:"><input class="contactInput" placeholder="What would you like to tell us.."></input></p>
+        <p class="contactP" type="Name:"><input type="text" class="contactInput" placeholder="" required></input></p>
+        <p class="contactP" type="Email:"><input type="email" class="contactInput" placeholder="" required></input></p>
+        <p class="contactP" type="Message:"><input type="textarea" class="contactInput" placeholder="" required></input></p>
         <button class="contactButton">Send Message</button>
-        <div class="contactDiv">
-          <span class="fa fa-phone contactSpan"></span>07711785878
-          <span class="fa fa-envelope-o contactSpan"></span> liamwigginspt@gmail.com
+        <div class="contactDiv row">
+          <div class=""><span class="fa fa-phone contactSpan ml-0"></span><span>07711785878</span></div>
+          <div class=""><span class="fa fa-envelope-o contactSpan ml-0"></span> <span>liamwigginspt@gmail.com</span></div>
         </div>
       </form>
-
     </div>
+
 
 
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
