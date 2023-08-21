@@ -98,7 +98,7 @@ html, body {
 
 }
 .physioPage{
-    background: #e3ded7;
+    background: #f7f7f7;
 }
 /* START OF HOMEPAGE */
 .nameBox{
@@ -126,7 +126,7 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 
     margin-top: 5rem;
 }
 .tic{
-    color: green;
+    color: green !important;
 }
 
 .benefitsChecklist{
@@ -630,7 +630,7 @@ a:link,a:active,a:visited,a:hover{
 
 }
 .whatToExpectBox{
-    margin-top:5rem;
+    margin-top:3rem;
 }
 
 table {

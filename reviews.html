@@ -47,7 +47,13 @@ function menuToggle() {
     menuToggle.classList.toggle('open');
   });
 }
-
+$(window).scroll(function(){
+  if ($(this).scrollTop() > 50) {
+     $('.theNavBar').addClass('scrolledNavBG');
+  } else {
+     $('.theNavBar').removeClass('scrolledNavBG');
+  }
+});
 </script>
 <body class="physioPage">
   <nav class="theNavBar">

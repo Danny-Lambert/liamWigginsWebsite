@@ -33,11 +33,6 @@
 </head>
 <script>
 
-  function sendEmailContact() {
-      document.getElementById("form").removeClass("d-none");
-      alert("working")
-    }
-    
 $('.menu-toggle').click(function(){
   $('.site-nav').toggleClass('site-nav--open', 500);
   $(this).toggleClass('open');
@@ -163,9 +158,9 @@ $(window).scroll(function(){
         <p class="contactP" type="Email:"><input type="email" class="contactInput" placeholder="" required></input></p>
         <p class="contactP" type="Message:"><textarea type="" class="contactInput" placeholder="" required></textarea></p>
         <div class="contactDiv row mb-">
-          <div class="col-12 col-lg-6 row mb-2">
-            <div class="align-items-center col-6 col-lg-12 d-flex pl-0"><span class="fa fa-phone contactSpan ml-0"></span><span>07969265658</span></div>
-            <div class="align-items-center col-6 col-lg-12 d-flex pl-0"><span class="fa fa-envelope-o contactSpan ml-0"></span> <span>liamwigginspt@gmail.com</span></div>
+          <div class="col-12 col-lg-6 row mb-2 pl-0">
+            <div class="align-items-center col-12 d-flex pl-0"><span class="fa fa-phone contactSpan ml-0"></span><span>07969265658</span></div>
+            <div class="align-items-center col-12 d-flex pl-0"><span class="fa fa-envelope-o contactSpan ml-0"></span> <span>liamwigginspt@gmail.com</span></div>
           </div>
           <button class="contactButton col-12 col-lg-6">Send Message</button>
         </div>

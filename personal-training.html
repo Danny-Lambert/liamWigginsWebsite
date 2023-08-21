@@ -51,14 +51,20 @@ function menuToggle() {
     menuToggle.classList.toggle('open');
   });
 }
-
+$(window).scroll(function(){
+  if ($(this).scrollTop() > 50) {
+     $('.theNavBar').addClass('scrolledNavBG');
+  } else {
+     $('.theNavBar').removeClass('scrolledNavBG');
+  }
+});
 </script>
 <body class="physioPage">
   <nav class="theNavBar">
     <div class="align-items-center container d-flex justify-content-between my-3">
       <span id="fullNavIcons">
         <a href="https://www.facebook.com/Liam-Wiggins-Personal-Training-290878944881761/" target="_blank"  style="padding:1em"><i id="socialMediaIcons" class="fab fa-facebook text-white socialMediaIcons"></i></a>
-        <a href="https://www.instagram.com/liamwiggins/ target="_blank"  style="padding:1em"><i id="socialMediaIcons" class="fab fa-instagram text-white  socialMediaIcons"></i></a>
+        <a href="https://www.instagram.com/liamwiggins/" target="_blank"  style="padding:1em"><i id="socialMediaIcons" class="fab fa-instagram text-white  socialMediaIcons"></i></a>
         <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAAEBG3LIBfKkCh1uuRRy5-HJVAB-aCcXQix0&keywords=liam%20wiggins&origin=RICH_QUERY_SUGGESTION&position=0&searchId=0364d59e-dda1-4e26-a189-af4b12f76c27&sid=ciP" target="_blank"  style="padding:1em"><i id="socialMediaIcons" class="fab fa-linkedin text-white  socialMediaIcons"></i></a>
       </span>
       <ul class="site-nav">
@@ -82,34 +88,11 @@ function menuToggle() {
     </div>
   </nav>
   <div class="topBannerImage topBannerImagePT w-100 justify-content-center align-items-center d-flex">
-    <h1 class="text-white font-weight-bold">PERSONAL TRAINING</h1>
+    <h1 class="font-weight-bold ml-5 ml-sm-0 text-white">PERSONAL TRAINING</h1>
   </div>
-  <!-- <div class="row justify-content-lg-between mb-5">
-  <div class="col-lg-5 col-10 ml-5 whatToExpectBox">
-    <h1>What to expect</h1>
-    <ul>
-      
-      <li class="mb-3"><strong>Personalised Plans</strong> - Gym mumbo jumbo to say how great it is to have personlised plans etc etc </li>
-      <li class="mb-3"><strong>Fully Qualified PT</strong> - something about the qualifications you have and degree etc maybe rugby chat</li>
-      <li class="mb-3"><strong>Get to see Nanook</strong> - Another benefit you want to put on here about something probs not Nanook</li>
-      <li class="mb-3"><strong>Fully functioning gym</strong> - flexible around you can do whatever times is required by the client</li>
-      <li class="mb-3"><strong>Gym Exercises</strong> - to complete in the gym when your not pting with me</li>
-    </ul>
-    </div>
-    <div class="col-lg-5 col-10 ml-5 whatToExpectBox">
-      <h1>What to expect</h1>
-      <ul>
-        
-        <li class="mb-3"><strong>Personalised Plans</strong> - Gym mumbo jumbo to say how great it is to have personlised plans etc etc </li>
-        <li class="mb-3"><strong>Fully Qualified PT</strong> - something about the qualifications you have and degree etc maybe rugby chat</li>
-        <li class="mb-3"><strong>Get to see Nanook</strong> - Another benefit you want to put on here about something probs not Nanook</li>
-        <li class="mb-3"><strong>Fully functioning gym</strong> - flexible around you can do whatever times is required by the client</li>
-        <li class="mb-3"><strong>Gym Exercises</strong> - to complete in the gym when your not pting with me</li>
-      </ul>
-      </div>
-    </div> -->
+
       <div class="row justify-content-center bg-white" style="">
-    <div class="col-lg-5 col-10 ml-5 whatToExpectBox text-center mb-5 ">
+    <div class="col-lg-5 col-10 whatToExpectBox text-center">
       <div class="align-items-center d-flex justify-content-center row">
         <i class="col-auto fa-solid fa-utensils fourSectionIcon fa-3x p-4 mt-2"></i>
         <h2 class="col-auto">Nutrition</h2>
@@ -121,21 +104,27 @@ function menuToggle() {
       <br><br>
     </p>
   </div> </div>    
-  <div class="col-lg-5 col-10 ml-5 whatToExpectBox text-center">
+  <div class="col-lg-5 col-10 whatToExpectBox text-center">
+    <div class="align-items-center d-flex justify-content-center row">
 
-        <h2 class="mt-3">Personalised Plans</h2>
-        <i class="fa-solid fa-calendar-days fourSectionIcon fa-3x p-4 mt-2"></i>
+        <i class="col-auto fa-solid fa-calendar-days fourSectionIcon fa-3x p-4 mt-2"></i>
+        <h2 class="col-auto">Personal Plans</h2>
+      </div>
+      <div class=" whatToExpectBox text-center">
         <p>
           The journey towards better health is a personal one, and our personalized gym training program embraces this philosophy. By crafting workouts that align with your preferences, schedule, and specific goals, together we will create you an engaging and sustainable routine that you'll genuinely enjoy. With ongoing guidance, motivation, and support from our expert trainers, you'll experience the transformative power of training firsthand. Don't just exercise – embark on a purposeful and enriching fitness journey that empowers you to thrive both physically and mentally.</p>
         </div> 
-          <div class="col-lg-5 col-10 ml-5 whatToExpectBox text-center mb-5 ">
-
-          <h2>Training</h2>
-          <!-- <i class="fa-solid fa-dumbbell fourSectionIcon fa-3x p-4 mt-2"></i> -->
-
-          <p>
-            In my training approach, I integrate a diverse range of techniques to optimize clients' fitness journeys. We'll harness the power of High-Intensity Interval Training (HIIT) for efficient calorie burn and improved cardiovascular endurance. Functional training enhances everyday movements, promoting overall strength and stability. Resistance training builds lean muscle mass, boosting metabolism and achieving desired body composition. Flexibility exercises improve range of motion, reducing injury risks. These techniques synergistically target various fitness aspects, ensuring well-rounded progress tailored to individual goals. By embracing this comprehensive approach, clients not only experience physical transformation but also gain the confidence and knowledge to maintain a sustainable, healthier lifestyle.</p>
-  </div>
+      </div>
+          <div class="col-lg-5 col-10 whatToExpectBox text-center mb-5 ">
+            <div class="align-items-center d-flex justify-content-center row">
+              <i class=" col-auto fa-solid fa-dumbbell fourSectionIcon fa-3x p-4 mt-2"></i>
+              <h2 class="col-auto">Training</h2>
+            </div>
+            <div class=" whatToExpectBox text-center">
+              <p>
+                In my training approach, I integrate a diverse range of techniques to optimize clients' fitness journeys. We'll harness the power of High-Intensity Interval Training (HIIT) for efficient calorie burn and improved cardiovascular endurance. Functional training enhances everyday movements, promoting overall strength and stability. Resistance training builds lean muscle mass, boosting metabolism and achieving desired body composition. Flexibility exercises improve range of motion, reducing injury risks. These techniques synergistically target various fitness aspects, ensuring well-rounded progress tailored to individual goals. By embracing this comprehensive approach, clients not only experience physical transformation but also gain the confidence and knowledge to maintain a sustainable, healthier lifestyle.</p>
+            </div>
+          </div>
   </div>
 
   <footer class="footer row">

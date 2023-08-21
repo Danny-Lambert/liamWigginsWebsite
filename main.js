@@ -4,3 +4,10 @@ $('.menu-toggle').click(function(){
   $(this).toggleClass('open');
 });
 
+$(window).scroll(function(){
+  if ($(this).scrollTop() > 50) {
+     $('.theNavBar').addClass('scrolledNavBG');
+  } else {
+     $('.theNavBar').removeClass('scrolledNavBG');
+  }
+});
