@@ -614,7 +614,7 @@ a:link,a:active,a:visited,a:hover{
 
 }
 .topBannerImagePhysio{
-    background-image: url("./images/massageBanner.jpg");
+    background-image: url("./images/massageBanner2.jpg");
     background-repeat: round;
     /* background-image: url("./images/testmassage.jpg"); */
 
@@ -625,7 +625,11 @@ a:link,a:active,a:visited,a:hover{
   background-repeat: round;
 }
 .topBannerImageReview{
-  background-image: url("./images/reviewBanner.jpg");
+  background-image: url("./images/reviewBanner2.jpg");
+  background-repeat: round;
+}
+.topBannerImageAbout{
+  background-image: url("./images/aboutBanner2.png");
   background-repeat: round;
 
 }
@@ -648,7 +652,7 @@ table {
   }
   
   table tr {
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     border: 1px solid #ddd;
     padding: .35em;
   }
